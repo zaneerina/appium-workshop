@@ -20,18 +20,18 @@ class Server
     end
   end
 
-  def uninstall_app
-    `adb -s #{@sn} uninstall io.appium.settings`
-    `adb -s #{@sn} uninstall io.appium.unlock`
-    `adb -s #{@sn} uninstall #{@app_package}`
-  end
+  #def uninstall_app
+ #   `adb -s #{@sn} uninstall io.appium.settings`
+  #  `adb -s #{@sn} uninstall io.appium.unlock`
+  #  `adb -s #{@sn} uninstall #{@app_package}`
+ # end
 
-  def install_app
-    `adb -s #{@sn} install #{@apk}`
-  end
+ # def install_app
+#    `adb -s #{@sn} install #{@apk}`
+#  end
 
-  def reinstall_app
-    uninstall_app
-    install_app
-  end
+ # def reinstall_app
+  #  uninstall_app
+  #  install_app
+ # end
 end
